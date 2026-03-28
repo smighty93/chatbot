@@ -1,0 +1,108 @@
+
+Consumer Protection Act – Rule Logic Design
+1. PURPOSE OF THIS FILE
+This file defines the rule-based legal reasoning logic used by the Consumer Law Decision-Support Chatbot.
+The rules convert user-described problems into:
+Issue type
+Relevant legal provisions (indicative)
+Risk level
+Timeline range
+Penalty awareness
+Cost awareness
+Escalation warnings
+⚠️ These rules provide legal awareness only, not legal advice.
+2. SUPPORTED LEGAL DOMAIN
+Primary Domain: Consumer Protection Act, 2019
+Scope: Consumer disputes related to goods, services, and e-commerce
+Excluded: Criminal law, family law, labour law, verdict prediction
+3. ISSUE CLASSIFICATION RULES
+The system classifies the user problem into one primary issue type based on keywords and intent detected through NLP.
+3.1 Supported Issue Types
+Defective Product
+Refund Not Given
+Service Deficiency
+E-Commerce Issue
+Misleading Advertisement
+General Consumer Query
+3.2 Issue Identification Logic
+Defective Product
+Keywords: broken, damaged, defective, not working, faulty, malfunction
+Refund Not Given
+Keywords: refund, money back, return denied, no refund, seller refused
+Service Deficiency
+Keywords: delay, poor service, incomplete service, negligence, bad service
+E-Commerce Issue
+Keywords: online, app, website, delivery app, e-commerce, platform
+Misleading Advertisement
+Keywords: fake offer, misleading ad, false claim, advertisement lie
+General Consumer Query
+Used when no strong issue keywords are detected
+4. SECTION MAPPING RULES (INDICATIVE)
+The system maps issue types to commonly associated legal provisions under the Consumer Protection Act, 2019.
+Issue Type	Indicative Legal Provisions
+Defective Product	Definition of defect, Section 35 (Filing of complaint)
+Refund Not Given	Unfair trade practice provisions
+Service Deficiency	Definition of deficiency, Section 35
+E-Commerce Issue	Consumer Protection (E-Commerce) Rules, 2020
+Misleading Advertisement	Penalty for false or misleading advertisements
+General Query	General provisions of the Act
+⚠️ Sections are informational, not directives.
+5. RISK SCORING RULES
+Risk levels indicate legal exposure, not chances of winning.
+5.1 Risk Levels
+Low Risk: Informational or minor issue
+Medium Risk: Monetary loss or service dispute
+High Risk: Severe violations, penalties, or repeated misconduct
+5.2 Risk Determination Logic
+Condition	Risk Level
+General legal awareness query	Low
+Refund or service-related dispute	Medium
+Repeated violation or high monetary loss	High
+Penalty or imprisonment provisions involved	High
+6. TIMELINE ESTIMATION RULES (INDICATIVE)
+Timelines are approximate and depend on forum workload and case complexity.
+Forum Type	Typical Timeline
+District Consumer Commission	3–6 months
+State Consumer Commission	6–12 months
+Mediation Process	Shorter duration
+Timeline is selected based on claim value and issue type.
+7. PENALTY & CONSEQUENCE RULES
+Penalties are displayed only if applicable.
+7.1 Penalty Conditions
+Misleading Advertisement
+Fine may extend up to ₹10 lakh
+Repeat offence may attract higher penalties
+Non-compliance with Commission Orders
+Fine and/or imprisonment as per the Act
+Defective Goods / Refund Issues
+Compensation may be awarded depending on loss
+⚠️ Exact penalty amounts are never calculated.
+8. COST AWARENESS RULES
+Cost awareness is shown as broad brackets, not exact figures.
+Case Type	Cost Awareness
+Small consumer dispute	Low
+Refund / service issue	Low to Moderate
+Higher-value claim	Moderate
+Costs may include:
+Filing fees (often minimal)
+Optional legal assistance
+9. ESCALATION RULES (ETHICAL GUARDRAIL)
+The system must recommend professional legal consultation if any of the following are detected:
+9.1 Escalation Triggers
+Criminal terms (fraud, cheating, police, FIR)
+High penalty or imprisonment provisions
+Repeated non-compliance by seller/service provider
+User mentions arrest, summons, or prosecution
+9.2 Escalation Output
+If triggered:
+“Consultation with a qualified legal professional is recommended.”
+If not triggered:
+“Immediate escalation may not be required.”
+10. GENAI USAGE RULE (IMPORTANT)
+GenAI (e.g., LLaMA) is used only for explanation
+GenAI does not:
+Select sections
+Determine risk
+Predict outcomes
+Give legal advice
+All legal decisions come from these rules.
