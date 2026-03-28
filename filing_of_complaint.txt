@@ -1,0 +1,12 @@
+
+Consumer: A person who buys goods or avails services for consideration, including online transactions, but not for resale or commercial purposes.
+Complaint: Any written allegation regarding:
+Defective goods
+Deficiency in services
+Unfair trade practices
+Overcharging
+Hazardous goods/services
+Defect: Any fault or shortcoming in quality, quantity, purity, or standard of goods.
+Deficiency: Any inadequacy or negligence in services.
+Unfair Trade Practice: False representation, misleading advertisement, refusal to refund defective goods, not issuing bills, etc.
+E-commerce: Buying or selling goods or services over a digital or electronic network.
