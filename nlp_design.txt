@@ -1,0 +1,18 @@
+
+Purpose:
+Define how user text is processed and converted into structured signals.
+NLP Tasks:
+Text cleaning
+Tokenization
+Keyword extraction
+Context detection
+Risk signal detection
+Outputs Provided to Rule Engine:
+keywords
+issue_hints
+context
+monetary_flags
+escalation_flags
+Limitations:
+NLP does not make legal decisions
+NLP output is probabilistic and interpreted by rules
